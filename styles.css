@@ -1,0 +1,138 @@
+/* Basic reset and box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    background: #121211;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the .center-heading */
+    align-items: center; /* Vertically centers the headings */
+    padding:12px;
+    width: 100%; /* Ensures the header spans the full width of the screen */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    position: relative; /* Needed for absolute positioning of .right-heading */
+    background: #333;
+    color: #fff;
+    font-family: "Afacad Flux";
+  }
+  
+.center-heading {
+    text-align: center; /* Centers the text within the flex item */
+    margin: 0;
+}
+  
+.right-heading {
+    position: absolute; /* Positions the right heading absolutely within the header */
+    right: 30px; /* Adds a gap between the heading and the edge of the screen */
+    font-size: 18px;
+}
+
+h2 {
+    font-family: "Afacad Flux";
+}
+
+p {
+    font-size: 18px;
+    font-family: "Afacad Flux";
+}
+
+
+/* Container for the masonry grid */
+.grid {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* 
+    The grid-sizer and each card are given 1/3 the width
+    so that there will be 3 columns in total.
+*/
+.grid-sizer,
+.card {
+    width: calc((100% - 60px) / 3); /* Adjusted for gaps */
+}
+
+/* Card styling */
+.card {
+    background: #fff;
+    margin-bottom: 20px; /* Gap between rows */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 4px solid #0c2b94; /* Slightly darker border */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.card-content h2 {
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 1rem; /* Reduce bottom margin */
+}
+
+.card-content p {
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 1rem; /* Adjust bottom margin as needed */
+}
+
+/* Styling for the tools text */
+.card-tools {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Afacad Flux";
+    z-index: 1; /* Ensure it's above the image */
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: "Afacad Flux";
+}
+
+/* For smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .grid-sizer,
+    .card {
+        width: calc((100% - 40px) / 2); /* 20px gutter, 2 columns */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .grid-sizer,
+    .card {
+        width: calc(100% - 20px); /* 20px gutter, 1 column */
+    }
+}

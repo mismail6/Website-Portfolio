@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="center-heading">Muhammad Ismail's Projects</h1>
+    <h2 class="right-heading">
+      <i class="fa-solid fa-envelope" style="color: #fcfcfc; margin-right: 8px;"></i>
+      ismailjan12@gmail.com</h2>
+  </header>
+  <main>
+    <!-- The container for all project cards -->
+    <div class="grid">
+      <!-- This element helps Masonry calculate column width -->
+      <div class="grid-sizer"></div>
+      
+      <!-- IMPORTANT PROJECTS (first 3) -->
+      <div class="card">
+        <div class="card-tools">Python, Pytorch</div>
+        <img src="assets/FastNeural_img2.png" alt="Project 1" />
+        <div class="card-content">
+            <h2>Fast Neural Style Transfer</h2> 
+            <p>An AI model that is trained by applying different styled images on a dataset of 8000 images. Once trained, 
+                the AI can then apply the same style to any image.
+            </p>
+          <a href="https://github.com/mismail6/Fast-Neural-Style-Transfer-with-Flickr8k" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">Java, SQL, Android Studio</div>
+        <img src="assets/Safepath_img1.png" alt="Project 2" />
+        <div class="card-content">
+            <h2>Safe Path</h2>
+            <p>An Android App that allows users to reach their destination saftely and efficiently.
+                It uses the Google Maps API as the interface for accurate navigation. An algorithm is designed to parse through
+                 available routes while avoiding set danger zones.
+                Additionally, a small database is used to record recently searched routes.</p>
+          <a href="https://github.com/mismail6/Safe-Path" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">Python, Flask, Java, Android Studio</div>
+        <img src="assets/Keyless Tap_img1.jpg" alt="Project 3" style="width: 100%; height: 80%; margin: 0 auto;" />
+        <div class="card-content">
+            <h2>Keyless Tap</h2>
+            <p>Forgot your keys? This is a system that uses a Raspberry Pi and Mobile App which allows the user to physically push 
+                the "open main door" button virtually from their phone with the help of a linear actuator.</p>
+          <div style="display: flex; gap: 14px;">
+            <a href="https://github.com/mismail6/Keyless-Tap" target="_blank" class="btn">View on GitHub</a>
+            <a href="https://www.youtube.com/shorts/q7eWrnLUQiY" target="_blank" class="btn">Watch in Action</a>
+        </div>
+        </div>
+      </div>
+
+      <!-- OTHER PROJECTS -->
+      <div class="card">
+        <div class="card-tools">Python, Web-Scraping</div>
+        <img src="assets/WordleSolver_img2.png" alt="Project 4" />
+        <div class="card-content">
+          <h2>Daily Wordle Solver</h2>
+          <p>A scraper fetches the daily wordle by the New York Times from the internet and an algorithm designed in Python 
+            guesses that wordle in as few attempts as possible.</p>
+          <a href="https://github.com/mismail6/Wordle-Dataset-Solver" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">Java, JavaFX</div>
+        <img src="assets/SamuraiLegend_img1.png" alt="Project 5" />
+        <div class="card-content">
+          <h2>Samurai Legend</h2>
+          <p>A 2D game made entirely using Java/Javafx. In this game, you have to clear 10 waves as a Samurai holding
+             a katana. Each wave consists of different enemies which have different attacks. The final boss has a special trick.
+          <a href="https://github.com/mismail6/Samurai-Legend" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">Python, Pytorch</div>
+        <img src="assets/DCGAN_img1.png" alt="Project 6" />
+        <div class="card-content">
+          <h2>AI Image Generation (DCGAN)</h2>
+          <p>What if you could generate the image of a video game character that does not exist in the game? This is exactly what this project
+            attempts. The dataset used consists of images of all champions in the video game "League of Legends", and the 
+            AI model tries to generate an entirely new champion based off the patterns it learns.</p>
+          <a href="https://github.com/mismail6/Pytorch-DCGAN-for-Custom-Dataset" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">C#, Unity</div>
+        <img src="assets/FreeSlice_img1.png" alt="Project 7" />
+        <div class="card-content">
+          <h2>Free Slice</h2>
+          <p>A physics-rich 3D environment developed in Unity, where players can dynamically slice objects with a
+             katana and interact with their surroundings by picking up and throwing objects.</p>
+          <a href="https://github.com/mismail6/Unity-Free-Slice-Project" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tools">In Progress...</div>
+        <img src="assets/robocat_img1.png" alt="Project 8" />
+        <div class="card-content">
+          <h2>Cat Chaser</h2>
+          <p>Entertaining my cat daily is a tedious job so I'm currently working on an Automatic Robot Car that plays chase with my cat around the house. 
+             It will mount a raspberry pi with a camera that will detect my cat and chase it whenever it is in vision.
+          </p>
+          <a href="https://github.com/username/project8" target="_blank" class="btn">In Progress...</a>
+        </div>
+      </div>
+      
+      <!-- In the future, you can add more cards here -->
+    </div>
+  </main>
+  
+  <!-- Masonry library from CDN -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
