@@ -23,6 +23,7 @@ header {
     background: #333;
     color: #fff;
     font-family: "Afacad Flux";
+    font-size: 1.1rem;
   }
   
 .center-heading {
@@ -33,7 +34,7 @@ header {
 .right-heading {
     position: absolute; /* Positions the right heading absolutely within the header */
     right: 1.875rem; /* Adds a gap between the heading and the edge of the screen */
-    font-size: 1.125rem;
+    font-size: 1.025rem;
 }
 
 h2 {
