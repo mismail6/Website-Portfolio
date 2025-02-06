@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: center; /* Centers the .center-heading */
     align-items: center; /* Vertically centers the headings */
-    padding:12px;
+    padding:0.625rem;
     width: 100%; /* Ensures the header spans the full width of the screen */
     box-sizing: border-box; /* Ensures padding is included in the width */
     position: relative; /* Needed for absolute positioning of .right-heading */
@@ -32,8 +32,8 @@ header {
   
 .right-heading {
     position: absolute; /* Positions the right heading absolutely within the header */
-    right: 30px; /* Adds a gap between the heading and the edge of the screen */
-    font-size: 18px;
+    right: 1.875rem; /* Adds a gap between the heading and the edge of the screen */
+    font-size: 1.125rem;
 }
 
 h2 {
@@ -41,14 +41,14 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "Afacad Flux";
 }
 
 
 /* Container for the masonry grid */
 .grid {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 2rem auto;
 }
 
@@ -58,18 +58,18 @@ p {
 */
 .grid-sizer,
 .card {
-    width: calc((100% - 60px) / 3); /* Adjusted for gaps */
+    width: calc((100% - 3.75rem) / 3); /* Adjusted for gaps */
 }
 
 /* Card styling */
 .card {
     background: #fff;
-    margin-bottom: 20px; /* Gap between rows */
-    border-radius: 5px;
+    margin-bottom: 1.25rem; /* Gap between rows */
+    border-radius: 0.3125rem;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 4px solid #0c2b94; /* Slightly darker border */
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border: 0.25rem solid #0c2b94; /* Slightly darker border */
+    box-shadow: inset 0 0 0.3125rem rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
 }
 
 .card img {
@@ -98,13 +98,13 @@ p {
 /* Styling for the tools text */
 .card-tools {
     position: absolute;
-    top: 1px;
-    right: 1px;
+    top: 0.0625rem;
+    right: 0.0625rem;
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 14px;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
     font-family: "Afacad Flux";
     z-index: 1; /* Ensure it's above the image */
 }
@@ -117,15 +117,21 @@ p {
     background: #333;
     color: #fff;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     font-family: "Afacad Flux";
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 123, 255, 0.3);
+    transform: translateY(-0.1875rem);
 }
 
 /* For smaller screens (e.g., tablets) */
 @media (max-width: 768px) {
     .grid-sizer,
     .card {
-        width: calc((100% - 40px) / 2); /* 20px gutter, 2 columns */
+        width: calc((100% - 2.5rem) / 2); /* 20px gutter, 2 columns */
     }
 }
 
@@ -133,6 +139,6 @@ p {
 @media (max-width: 480px) {
     .grid-sizer,
     .card {
-        width: calc(100% - 20px); /* 20px gutter, 1 column */
+        width: calc(100% - 1.25rem); /* 20px gutter, 1 column */
     }
 }
