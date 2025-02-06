@@ -130,6 +130,9 @@ p {
 
 /* For smaller screens (e.g., tablets) */
 @media (max-width: 768px) {
+    .right-heading{
+        display:none;
+    }
     .grid-sizer,
     .card {
         width: calc((100% - 2.5rem) / 2); /* 20px gutter, 2 columns */
@@ -138,6 +141,9 @@ p {
 
 /* For mobile screens */
 @media (max-width: 480px) {
+    .right-heading{
+        display:none;
+    }
     .grid-sizer,
     .card {
         width: calc(100% - 1.25rem); /* 20px gutter, 1 column */
